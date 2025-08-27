@@ -10,8 +10,12 @@ import (
 )
 
 var (
-	buildInfoMode = flag.Bool("buildinfo", false, "print build info and exit")
-	versionMode   = flag.Bool("version", false, "print version and exit")
+	//buildInfoMode = flag.Bool("buildinfo", false, "print build info and exit")
+	//versionMode   = flag.Bool("version", false, "print version and exit")
+	versionModeValue   = false
+	buildInfoModeValue = false
+	versionMode        = &versionModeValue
+	buildInfoMode      = &buildInfoModeValue
 )
 
 // InfoModeEnabled returns true if the plugin should run in build info mode
